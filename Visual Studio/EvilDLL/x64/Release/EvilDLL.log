@@ -1,0 +1,7 @@
+﻿  EvilDLL.cpp
+     Creating library C:\Users\developer\source\repos\LOLBASWorker\x64\Release\EvilDLL.lib and object C:\Users\developer\source\repos\LOLBASWorker\x64\Release\EvilDLL.exp
+  Generating code
+  Finished generating code
+  Compiler switch has changed, fall back to full compilation.
+  All 138 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  EvilDLL.vcxproj -> C:\Users\developer\source\repos\LOLBASWorker\x64\Release\EvilDLL.dll

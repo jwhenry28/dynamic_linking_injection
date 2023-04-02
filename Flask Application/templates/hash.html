@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>{% block title %} Hash Your Foobar Data {% endblock %}</h1>
+    <form method="post">
+        <input type="text" name="id" placeholder="123"></input>
+        <label for="id">ID</label>
+        <br>
+
+        <input type="text" name="title" placeholder="User XML"></input>
+        <label for="title">Data Title</label>
+        <br>
+        
+        
+        <input type="text" name="operation" placeholder="0-5"></input>
+        <label for="operation">Operation</label>
+        <br>
+        
+        <input type="text" name="mode" placeholder="0-10"></input>
+        <label for="mode">Mode</label>
+        <br>
+        <br>
+
+        <label for="content">Data</label>
+        <br>
+        <textarea name="content"
+                  placeholder="<user><name>Praetorian</name></user>"
+                  rows="15"
+                  cols="60"
+                  ></textarea>
+        <br>
+
+        <input type="hidden" name="engine" value="DataEngine" ></input>
+        <input type="hidden" name="method" value="ProcessData" ></input>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    {% for hash in hashes %}
+        <div class='hashes'>
+            <p><b>Clear: </b> {{ hash['clear'] }}</p>
+            <p><b>SHA256:</b> {{ hash['hashed'] }}</p>
+        </div>
+    {% endfor %}
+{% endblock %}
